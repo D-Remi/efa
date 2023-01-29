@@ -1,9 +1,13 @@
 import React from 'react';
 
 const HomeComponent = () => {
+
 	return (
-		<div>
-			<h1>home</h1>
+		<div className='header-image d-flex justify-content-center p-3'>
+			<p>
+				<span><img src='/images/logo.png' alt='logo efa74'/></span>	
+				<span>Enfance et Famille d'Adoption de la haute savoie</span>
+			</p>	
 		</div>
 	);
 };

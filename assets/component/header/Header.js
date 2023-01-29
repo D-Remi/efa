@@ -8,9 +8,9 @@ const Header = () => {
 	return (
 		<>
 			{['lg'].map((expand) => (
-				<Navbar key={expand} bg="light opacity-50" expand={expand} className="mb-3">
+				<Navbar key={expand} bg="light opacity-50" expand={expand}>
 					<Container fluid>
-						<Navbar.Brand href="/">EFA74</Navbar.Brand>
+						<Navbar.Brand href="/"><img style={ {width: '4em'}}src='/images/efasq2.png' alt='logo efa'/></Navbar.Brand>
 						<Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
 						<Navbar.Offcanvas
 							id={`offcanvasNavbar-expand-${expand}`}
@@ -25,7 +25,6 @@ const Header = () => {
 							<Offcanvas.Body>
 								<Nav className="justify-content-end flex-grow-1 pe-3">
 									<Link className="nav-link" to="/">Accueil</Link>
-									<Link className="nav-link" to="/agenda">Agenda</Link>
 									<Link className="nav-link" to="/evenements">Evenements</Link>
 									<Link className="nav-link" to="/adhésions">Adherer</Link>
 									<Link className="nav-link" to="/lien">Lien</Link>
